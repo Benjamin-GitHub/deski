@@ -1,0 +1,187 @@
+table,
+td,
+th {
+	border-spacing: 4px;
+	border-collapse: separate;
+	background-color: #ffffff;
+	font-family: "Quicksand", sans-serif;
+}
+
+td.desk-column {
+	padding: 5px;
+	text-align: center;
+	width: 65px;
+	min-width: 70px;
+	font-weight: 700;
+}
+
+td {
+	padding: 8px;
+}
+
+th {
+	font-weight: 700;
+	padding: 0px;
+}
+
+.table-container #table {
+	margin-right: 0;
+	width: 100%;
+	margin-top: 20px;
+	background-color: #ddd4d2;
+	color: black;
+	font-size: 1.2rem;
+}
+
+.table-container {
+	padding: 0 10px;
+}
+
+.inner {
+	padding: 8px 16px;
+	font-size: 1.6em;
+	border-radius: 40px;
+	margin-top: 1vh;
+}
+
+.hide {
+	display: none;
+}
+
+.visible-on-hover:hover .hide {
+	display: contents;
+}
+
+.visible-on-hover:hover {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+td.visible-on-hover {
+	padding: 4px;
+	font-weight: 500;
+	height: 50px;
+}
+
+.booked-bar {
+	border-radius: 4px 0 0 3px;
+	border-left: 8px solid #ffa270;
+}
+
+.arrow {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.previous {
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font-size: 40px;
+}
+
+.next {
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font-size: 40px;
+}
+
+.ui.button.arrows {
+	background: none;
+	color: aliceblue;
+	padding: 8px 16px;
+	font-size: 1.6em;
+}
+
+.header-date {
+	display: flex;
+	justify-content: center;
+	background-color: #eb7623;
+	padding: 8px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	height: auto;
+}
+
+.table-header {
+	display: flex;
+	padding: 8px;
+	justify-content: space-evenly;
+}
+
+.available-desk {
+	font-size: 1rem;
+	margin: auto;
+}
+
+.header-add-icon {
+	margin: auto;
+}
+
+@media (max-width: 860px) {
+	.table-container #table {
+		margin: 0 0;
+		width: 100%;
+		font-size: 0.8em;
+		padding: 1px;
+	}
+	td.desk-column {
+		padding: 1px;
+		text-align: center;
+		width: 30px;
+	}
+	td.visible-on-hover
+	{
+		min-width: 50px;
+		font-size: 0.99rem;
+	}
+	td,
+	th {
+		padding: 3px;
+	}
+	.arrow {
+		justify-content: center;
+	}
+	td.desk-column,
+	td,
+	th {
+		min-width: min-content;
+	}
+	.header-date {
+		display: flex;
+		justify-content: center;
+		background-color: #eb7623;
+		margin: auto;
+		padding: 0;
+		font-size: 0.8rem;
+		font-weight: 700;
+		height: auto;
+	}
+	.available-desk {
+		font-size: 0.6rem;
+		margin: auto;
+	}
+}
+
+@media (min-height: 665px) {
+	.table-container #table {
+		margin-top: 30px;
+	}
+	.arrow {
+		margin-top: 7.5vh;
+	}
+}
+
+@media (min-height: 665px) and (max-width: 860px) {
+	.arrow {
+		margin-top: 0;
+	}
+}
+
+@media (min-height: 1000px) {
+	.arrow {
+		margin-top: 25vh;
+	}
+}
